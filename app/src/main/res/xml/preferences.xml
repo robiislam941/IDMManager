@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FILE 23: res/xml/preferences.xml -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- ── Appearance ── -->
+    <PreferenceCategory android:title="Appearance">
+
+        <ListPreference
+            android:key="theme_mode"
+            android:title="Theme"
+            android:summary="Choose app theme"
+            android:defaultValue="system"
+            android:entries="@array/theme_entries"
+            android:entryValues="@array/theme_values"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <!-- ── Downloads ── -->
+    <PreferenceCategory android:title="Downloads">
+
+        <ListPreference
+            android:key="max_threads"
+            android:title="Max Simultaneous Downloads"
+            android:summary="Default: 4"
+            android:defaultValue="4"
+            android:entries="@array/thread_entries"
+            android:entryValues="@array/thread_values"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreference
+            android:key="auto_start"
+            android:title="Auto-start on Add"
+            android:summary="Automatically start download when link is added"
+            android:defaultValue="true" />
+
+        <SwitchPreference
+            android:key="wifi_only"
+            android:title="Download on Wi-Fi Only"
+            android:summary="Pause downloads on mobile data"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <!-- ── About ── -->
+    <PreferenceCategory android:title="App Info">
+
+        <Preference
+            android:key="developer"
+            android:title="Developer"
+            android:summary="Mri Robi Islam" />
+
+        <Preference
+            android:key="package"
+            android:title="Package"
+            android:summary="com.robi.idmmanager" />
+
+        <Preference
+            android:key="about"
+            android:title="About App"
+            android:summary="Version 1.0.0" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

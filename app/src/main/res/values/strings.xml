@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FILE 18: res/values/strings.xml -->
+<resources>
+    <string name="app_name">IDM Manager</string>
+    <string name="developer_name">Mri Robi Islam</string>
+    <string name="package_name">com.robi.idmmanager</string>
+    <string name="app_version">1.0.0</string>
+    <string name="privacy_policy_url">https://sites.google.com/view/idmmanager-privacy-policy</string>
+</resources>

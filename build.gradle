@@ -1,0 +1,16 @@
+// ═══════════════════════════════════════════
+// FILE 25: build.gradle (Project root)
+// ═══════════════════════════════════════════
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.3.0'
+    }
+}
+
+plugins {
+    id 'com.android.application' version '8.3.0' apply false
+}

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ═══════════════════════════════════════════
+     FILE 13: res/layout/activity_browser.xml
+     ═══════════════════════════════════════════ -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorSurface">
+
+    <!-- Address Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:background="?attr/colorSurfaceVariant"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:gravity="center_vertical"
+        android:elevation="4dp">
+
+        <ImageButton android:id="@+id/btnBack"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:src="@android:drawable/ic_media_rew"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back" />
+
+        <ImageButton android:id="@+id/btnForward"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:src="@android:drawable/ic_media_ff"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Forward" />
+
+        <EditText android:id="@+id/etUrl"
+            android:layout_width="0dp" android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="Search or enter URL"
+            android:inputType="textUri"
+            android:imeOptions="actionGo"
+            android:singleLine="true"
+            android:paddingStart="8dp"
+            android:textSize="13sp" />
+
+        <ImageButton android:id="@+id/btnRefresh"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:src="@android:drawable/ic_menu_rotate"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Refresh" />
+
+        <ImageButton android:id="@+id/btnGo"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:src="@android:drawable/ic_media_play"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Go" />
+    </LinearLayout>
+
+    <!-- Progress -->
+    <ProgressBar android:id="@+id/browserProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:max="100"
+        android:visibility="gone" />
+
+    <!-- Video detected bar -->
+    <LinearLayout android:id="@+id/downloadDetectedBar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:background="#FF6D00"
+        android:paddingStart="12dp"
+        android:paddingEnd="8dp"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <TextView android:id="@+id/tvDetectedFileName"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Video detected"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:ellipsize="end" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDownloadDetected"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="⬇ Download"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- WebView -->
+    <WebView android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

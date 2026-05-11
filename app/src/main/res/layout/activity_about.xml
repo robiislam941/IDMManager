@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FILE 16: res/layout/activity_about.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:gravity="center">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="⬇️" android:textSize="64sp" android:layout_marginBottom="8dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="IDM Manager"
+            android:textSize="24sp" android:textStyle="bold"
+            android:textColor="?attr/colorPrimary" />
+
+        <TextView android:id="@+id/tvVersion"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Version 1.0.0"
+            android:textSize="13sp" android:layout_marginTop="4dp"
+            android:textColor="?attr/colorOnSurfaceVariant" />
+
+        <View android:layout_width="80dp" android:layout_height="1dp"
+            android:background="?attr/colorOutline" android:layout_margin="20dp" />
+
+        <!-- Developer -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Developer"
+            android:textSize="12sp" android:textAllCaps="true"
+            android:textColor="?attr/colorOnSurfaceVariant" android:letterSpacing="0.1" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Mri Robi Islam"
+            android:textSize="18sp" android:textStyle="bold"
+            android:layout_marginTop="4dp" android:layout_marginBottom="6dp"
+            android:textColor="?attr/colorOnSurface" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Package: com.robi.idmmanager"
+            android:textSize="11sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:fontFamily="monospace" />
+
+        <View android:layout_width="80dp" android:layout_height="1dp"
+            android:background="?attr/colorOutline" android:layout_margin="20dp" />
+
+        <!-- Description -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="IDM Manager is a fast, lightweight download manager for Android.\nSupports multi-threaded downloads, pause/resume, and built-in video detection browser."
+            android:textSize="13sp" android:gravity="center"
+            android:lineSpacingMultiplier="1.4"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Buttons -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPrivacyPolicy"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:text="Privacy Policy"
+            android:layout_marginBottom="10dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRateApp"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:text="⭐ Rate on Play Store" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="© 2025 Mri Robi Islam. All rights reserved."
+            android:textSize="11sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>

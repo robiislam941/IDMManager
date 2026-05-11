@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FILE 19: res/values/colors.xml -->
+<resources>
+    <!-- Brand -->
+    <color name="primary">#1565C0</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="secondary">#FF6D00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Status colors -->
+    <color name="status_active">#1565C0</color>
+    <color name="status_complete">#2E7D32</color>
+    <color name="status_failed">#C62828</color>
+    <color name="status_paused">#EF6C00</color>
+
+    <!-- Progress bar -->
+    <color name="progress_fill">#1565C0</color>
+    <color name="progress_bg">#E0E0E0</color>
+</resources>
